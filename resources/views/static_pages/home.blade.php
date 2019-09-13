@@ -4,7 +4,7 @@
     <div class="jumbotron">
         <h1>Hello Laravel</h1>
         <p class="lead">
-            你现在所看到的是 <a href="">weibo-app</a> 。
+            你现在所看到的是 <a href="{{ route('home') }}">weibo-app</a> 。
         </p>
         <p>
             一切，将从这里开始。
