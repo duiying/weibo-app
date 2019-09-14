@@ -26,9 +26,15 @@ yarn add cross-env
 ```
 
 ### Laravel Mix前端资源编译
+对Laravel默认生成的app.scss文件进行编辑，删除此文件内的所有内容，只留下下面内容，用于导入bootstrap。
+```scss
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+```
+
 在webpack.mix.js文件中指定了Mix的任务。
 
-运行Mix任务进行编译。  
+我们需要将.scss文件编译成.css文件才能进行使用，于是我们运行Mix任务进行编译。  
 ```bash
 # 开发模式，编译生成的文件未被压缩，便于开发调试。
 npm run dev 或 npm run development
