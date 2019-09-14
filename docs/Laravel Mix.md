@@ -2,6 +2,7 @@
 
 ### 介绍
 Laravel Mix是一款前端任务自动化管理工具，使用了工作流的模式对制定好的任务依次执行。Mix提供了简单流畅的API，让你能够对你的Laravel应用定义Webpact编译任务。Mix支持许多常见的CSS与JS预处理器，通过简单的调用，你可以轻松地管理前端资源。我们可以在webpack.mix.js中制定一些资源文件的编译、压缩等任务。  
+
 Laravel已默认为我们生成了webpack.mix.js文件，并集成了laravel-mix模块。  
 
 webpack.mix.js
