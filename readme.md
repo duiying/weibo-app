@@ -10,4 +10,5 @@
   - [SASS语法基础](docs/SASS语法基础.md)
   - [Laravel项目前端工作流起手式](docs/Laravel项目前端工作流起手式.md)
   - [前端资源浏览器缓存问题](docs/前端资源浏览器缓存问题.md)
+  - [局部视图](docs/局部视图.md)
  
