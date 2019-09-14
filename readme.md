@@ -6,4 +6,5 @@
 - [Artisan命令](docs/Artisan命令.md)
 - Laravel前端工作流
   - [NPM和Yarn的介绍](docs/NPM和Yarn的介绍.md)
+  - [Laravel Mix](docs/Laravel%20Mix.md)
  
