@@ -38,6 +38,7 @@ package.json
 npm install
 ```
 在开始安装之前，npm install命令会先检查node_modules文件夹是否存在要安装的模块，如果该模块已存在，则跳过，接着安装下一模块。安装完成后，所有的第三方模块都将被下载到node_modules文件夹中。  
+
 可以使用下面命令强制安装所有模块，不管该模块之前是否安装过。
 ```bash
 npm install -f
