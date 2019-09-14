@@ -15,7 +15,7 @@ const mix = require('laravel-mix');
 // js方法的第二个参数用来指定自定义生成的js文件的输出目录
 // sass方法用于将sass文件编译为css文件，第二个参数用来指定自定义生成的css文件的输出目录
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css').version();
+    .sass('resources/sass/app.scss', 'public/css');
 ```
 
 ### 使用
