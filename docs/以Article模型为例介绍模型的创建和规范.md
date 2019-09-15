@@ -1,6 +1,8 @@
 # 以Article模型为例介绍模型的创建和规范
 
 ## 目录
+- [Article模型的创建](#Article模型的创建)
+- [Eloquent数据模型](#Eloquent数据模型)
 
 ### Article模型的创建
 模型类使用 单数 形式来命名：
