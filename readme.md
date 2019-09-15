@@ -18,4 +18,5 @@
   - [默认迁移文件](docs/默认迁移文件.md)
   - [用户模型](docs/用户模型.md)
   - [以Article模型为例介绍模型的创建和规范](docs/以Article模型为例介绍模型的创建和规范.md)
+  - [使用Tinker创建用户对象](docs/使用Tinker创建用户对象.md)
  
