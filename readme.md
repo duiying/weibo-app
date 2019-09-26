@@ -23,3 +23,4 @@
   - [使用Tinker更新用户对象](docs/使用Tinker更新用户对象.md)
 - 用户信息
   - [使用RESTful来构建用户资源](docs/使用RESTful来构建用户资源.md)
+  - [显示Gravatar头像](docs/显示Gravatar头像.md)

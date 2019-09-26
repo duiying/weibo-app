@@ -84,3 +84,4 @@ resources/views/users/show.blade.php
 {{ $user->name }} - {{ $user->email }}
 @stop
 ```
+这样，即可通过访问：[http://weibo-app.com/users/1](http://weibo-app.com/users/1)，来显示用户个人信息。
