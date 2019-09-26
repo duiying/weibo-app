@@ -83,4 +83,6 @@ section.user_info {
 ```
 编译，npm run dev。  
 
-重新访问：[http://weibo-app.com/users/1](http://weibo-app.com/users/1)，即可看到用户头像了。
+重新访问：[http://weibo-app.com/users/1](http://weibo-app.com/users/1)，即可看到用户头像了。  
+
+![Gravatar](https://raw.githubusercontent.com/duiying/img/master/Gravatar.png)  
