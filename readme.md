@@ -26,3 +26,4 @@
   - [显示Gravatar头像](docs/显示Gravatar头像.md)
   - [重置数据库](docs/重置数据库.md)
   - [构建注册表单](docs/构建注册表单.md)
+  - [注册表单规则和CSRF验证](docs/注册表单规则和CSRF验证.md)
