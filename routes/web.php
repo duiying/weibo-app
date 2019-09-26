@@ -17,4 +17,5 @@ Route::get('/about', 'StaticPagesController@about')->name('about');
 
 Route::get('signup', 'UsersController@create')->name('signup');
 
+// resource方法遵循RESTful架构为用户资源生成路由，该方法接收两个参数，第一个参数是资源名称，第二个参数是控制器名称
 Route::resource('users', 'UsersController');
