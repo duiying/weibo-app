@@ -20,4 +20,5 @@
   - [以Article模型为例介绍模型的创建和规范](docs/以Article模型为例介绍模型的创建和规范.md)
   - [使用Tinker创建用户对象](docs/使用Tinker创建用户对象.md)
   - [使用Tinker查找用户对象](docs/使用Tinker查找用户对象.md)
+  - [使用Tinker更新用户对象](docs/使用Tinker更新用户对象.md)
  
