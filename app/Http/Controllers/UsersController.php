@@ -27,6 +27,7 @@ class UsersController extends Controller
      * 创建用户
      *
      * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
      * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
@@ -42,6 +43,8 @@ class UsersController extends Controller
             'email' => $request->email,
             'password' => bcrypt($request->password),
         ]);
+
+        session()->flash('success', '注册成功');
 
         return redirect()->route('users.show', [$user]);
     }
