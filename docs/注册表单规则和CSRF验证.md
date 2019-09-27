@@ -14,7 +14,7 @@ public function store(Request $request)
     return;
 }
 ```
-验证规则：  
+验证规则如下所示。  
 
 不能为空：
 ```php
