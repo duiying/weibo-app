@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Auth;
 
 class UsersController extends Controller
 {
+    /**
+     * 注册页面
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function create()
     {
         return view('users.create');

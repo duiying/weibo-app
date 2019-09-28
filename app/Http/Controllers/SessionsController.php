@@ -41,4 +41,16 @@ class SessionsController extends Controller
             return redirect()->back()->withInput();
         }
     }
+
+    /**
+     * 退出登录
+     *
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function destroy()
+    {
+        Auth::logout();
+        session()->flash('success', '已成功退出登录');
+        return redirect('login');
+    }
 }
