@@ -3,6 +3,7 @@
 <head>
     <title>@yield('title', 'Weibo App')</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <script src="{{ mix('js/app.js') }}"></script>
 </head>
 <body>
     @include('layouts._header')
