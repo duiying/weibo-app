@@ -19,3 +19,10 @@ Route::get('signup', 'UsersController@create')->name('signup');
 
 // resource方法遵循RESTful架构为用户资源生成路由，该方法接收两个参数，第一个参数是资源名称，第二个参数是控制器名称
 Route::resource('users', 'UsersController');
+
+// 登录页面
+Route::get('login', 'SessionsController@create')->name('login');
+// 登录
+Route::post('login', 'SessionsController@store')->name('login');
+// 退出
+Route::delete('logout', 'SessionsController@destroy')->name('logout');
