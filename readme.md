@@ -39,3 +39,4 @@
   - [记住我](docs/记住我.md)
 - 用户CRUD
   - [更新用户](docs/更新用户.md)
+  - [利用身份验证Auth中间件来过滤未登录用户的edit、update动作](docs/利用身份验证Auth中间件来过滤未登录用户的edit、update动作.md)
