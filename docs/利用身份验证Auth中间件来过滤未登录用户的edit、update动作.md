@@ -21,4 +21,6 @@ middleware方法接收两个参数，第一个参数是中间件的名称，第�
 
 我们通过except方法来指定动作不使用Auth中间件进行过滤，相反地有only方法，只过滤指定动作。  
 
-退出登录，再次访问：http://weibo-app.com/users/1/edit ，页面被重定向到登录页面。
+退出登录，再次访问：http://weibo-app.com/users/1/edit ，页面被重定向到登录页面。  
+
+
