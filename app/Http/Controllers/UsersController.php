@@ -74,9 +74,11 @@ class UsersController extends Controller
      *
      * @param User $user
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function edit(User $user)
     {
+        $this->authorize('update', $user);
         return view('users.edit', compact('user'));
     }
 
@@ -86,10 +88,13 @@ class UsersController extends Controller
      * @param User $user
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      * @throws \Illuminate\Validation\ValidationException
      */
     public function update(User $user, Request $request)
     {
+        $this->authorize('update', $user);
+
         // 密码字段允许为空
         $this->validate($request, [
             'name' => 'required|max:50',
