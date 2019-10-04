@@ -10676,6 +10676,11 @@ footer small {
   float: left;
 }
 
+footer img.brand-icon {
+  width: 17px;
+  height: 17px;
+}
+
 /* User gravatar */
 
 section.user_info {
