@@ -121,4 +121,21 @@ class UsersController extends Controller
 
         return redirect()->route('users.show', $user->id);
     }
+
+    /**
+     * 删除用户
+     *
+     * @param User $user
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Exception
+     */
+    public function destroy(User $user)
+    {
+        // 授权
+        $this->authorize('destroy', $user);
+
+        $user->delete();
+        session()->flash('success', '删除成功');
+        return back();
+    }
 }
