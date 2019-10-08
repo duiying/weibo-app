@@ -11,6 +11,19 @@ class User extends Authenticatable
     use Notifiable;
 
     /**
+     * boot方法会在模型类完成初始化后进行加载
+     */
+    public static function boot()
+    {
+        parent::boot();
+
+        // 在模型被创建之前生成激活令牌
+        static::creating(function ($user) {
+            $user->activation_token = str_random(30);
+        });
+    }
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
