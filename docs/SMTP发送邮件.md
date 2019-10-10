@@ -30,7 +30,7 @@ protected function sendEmailConfirmationTo($user)
     });
 }
 ```
-将邮件链接中的http://localhost换成自定义的url，在.env中修改：
+将邮件链接中的 http://localhost 换成自定义的url，在.env中修改：
 ```
 APP_URL=http://weibo-app.com
 ```
