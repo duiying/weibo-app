@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Status;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -13,6 +14,13 @@ class StatusesController extends Controller
         $this->middleware('auth');
     }
 
+    /**
+     * 发布微博
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Illuminate\Validation\ValidationException
+     */
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -27,6 +35,21 @@ class StatusesController extends Controller
         session()->flash('success', '发布成功！');
 
         // 返回上一个页面
+        return redirect()->back();
+    }
+
+    /**
+     * 删除微博
+     *
+     * @param Status $status
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     */
+    public function destroy(Status $status)
+    {
+        $this->authorize('destroy', $status);
+        $status->delete();
+        session()->flash('success', '删除成功！');
         return redirect()->back();
     }
 }
