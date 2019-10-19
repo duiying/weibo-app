@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Follower;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 
 class UsersController extends Controller
@@ -20,6 +22,11 @@ class UsersController extends Controller
         ]);
     }
 
+    /**
+     * 用户列表
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function index()
     {
         $users = User::paginate(10);
@@ -176,5 +183,20 @@ class UsersController extends Controller
         $user->delete();
         session()->flash('success', '删除成功');
         return back();
+    }
+
+    /**
+     * 关注的人
+     *
+     * @param User $user
+     */
+    public function followings(User $user)
+    {
+        $id = $user->id;
+        $followings = DB::table('followers')
+            ->leftJoin('users', 'followers.follower_id', '=', 'users.id')
+            ->select('followers.*', 'users.name')
+            ->paginate(10);
+
     }
 }
